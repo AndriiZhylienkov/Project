@@ -48,7 +48,7 @@
             passField2.Anchor = AnchorStyles.Top;
             passField2.Font = new Font("Bookman Old Style", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             passField2.ForeColor = Color.LightSlateGray;
-            passField2.Location = new Point(108, 225);
+            passField2.Location = new Point(98, 230);
             passField2.Name = "passField2";
             passField2.Size = new Size(315, 36);
             passField2.TabIndex = 10;
@@ -59,7 +59,7 @@
             registerField.Anchor = AnchorStyles.Top;
             registerField.Font = new Font("Bookman Old Style", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             registerField.ForeColor = Color.LightSlateGray;
-            registerField.Location = new Point(108, 123);
+            registerField.Location = new Point(98, 128);
             registerField.Name = "registerField";
             registerField.Size = new Size(315, 36);
             registerField.TabIndex = 8;
@@ -71,7 +71,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(479, 91);
+            panel1.Size = new Size(459, 91);
             panel1.TabIndex = 6;
             // 
             // registerText
@@ -81,7 +81,7 @@
             registerText.ForeColor = Color.White;
             registerText.Location = new Point(0, 0);
             registerText.Name = "registerText";
-            registerText.Size = new Size(479, 91);
+            registerText.Size = new Size(459, 91);
             registerText.TabIndex = 0;
             registerText.Text = "Реєстрація";
             registerText.TextAlign = ContentAlignment.MiddleCenter;
@@ -97,17 +97,19 @@
             registerButton.FlatStyle = FlatStyle.Flat;
             registerButton.Font = new Font("Bookman Old Style", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
             registerButton.ForeColor = Color.White;
-            registerButton.Location = new Point(108, 380);
+            registerButton.Location = new Point(98, 380);
             registerButton.Name = "registerButton";
             registerButton.Size = new Size(276, 52);
             registerButton.TabIndex = 11;
             registerButton.Text = "Зареєструватись";
             registerButton.UseVisualStyleBackColor = false;
+            registerButton.Click += registerButton_Click;
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.Top;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(38, 206);
+            pictureBox2.Location = new Point(28, 211);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(64, 64);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -116,8 +118,9 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Top;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(38, 108);
+            pictureBox1.Location = new Point(28, 113);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(64, 64);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -129,7 +132,7 @@
             recomLabel.Anchor = AnchorStyles.Top;
             recomLabel.Font = new Font("Bookman Old Style", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             recomLabel.ForeColor = Color.LightSlateGray;
-            recomLabel.Location = new Point(38, 291);
+            recomLabel.Location = new Point(28, 308);
             recomLabel.Name = "recomLabel";
             recomLabel.Size = new Size(385, 36);
             recomLabel.TabIndex = 14;
@@ -142,7 +145,7 @@
             sendToLogInLabel.Cursor = Cursors.Hand;
             sendToLogInLabel.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
             sendToLogInLabel.ForeColor = Color.LightSlateGray;
-            sendToLogInLabel.Location = new Point(190, 435);
+            sendToLogInLabel.Location = new Point(180, 435);
             sendToLogInLabel.Name = "sendToLogInLabel";
             sendToLogInLabel.Size = new Size(118, 24);
             sendToLogInLabel.TabIndex = 15;
@@ -157,7 +160,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(479, 516);
+            ClientSize = new Size(459, 504);
             Controls.Add(sendToLogInLabel);
             Controls.Add(recomLabel);
             Controls.Add(pictureBox2);
@@ -166,7 +169,9 @@
             Controls.Add(passField2);
             Controls.Add(registerField);
             Controls.Add(panel1);
+            MinimumSize = new Size(412, 504);
             Name = "RegisterForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

@@ -103,6 +103,7 @@
             logInButton.TabIndex = 5;
             logInButton.Text = "Авторизуватись";
             logInButton.UseVisualStyleBackColor = false;
+            logInButton.Click += logInButton_Click;
             // 
             // pictureBox1
             // 
@@ -170,6 +171,7 @@
             Controls.Add(panel1);
             MinimumSize = new Size(405, 528);
             Name = "LogInForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
