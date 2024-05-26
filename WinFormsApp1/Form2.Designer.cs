@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             passField2 = new TextBox();
             registerField = new TextBox();
-            panel1 = new Panel();
+            registrationText = new Panel();
             registerText = new Label();
             registerButton = new Button();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             recomLabel = new Label();
             sendToLogInLabel = new Label();
-            panel1.SuspendLayout();
+            registrationText.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -64,15 +64,15 @@
             registerField.Size = new Size(315, 36);
             registerField.TabIndex = 8;
             // 
-            // panel1
+            // registrationText
             // 
-            panel1.BackColor = SystemColors.ActiveCaption;
-            panel1.Controls.Add(registerText);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(459, 91);
-            panel1.TabIndex = 6;
+            registrationText.BackColor = SystemColors.ActiveCaption;
+            registrationText.Controls.Add(registerText);
+            registrationText.Dock = DockStyle.Top;
+            registrationText.Location = new Point(0, 0);
+            registrationText.Name = "registrationText";
+            registrationText.Size = new Size(459, 91);
+            registrationText.TabIndex = 6;
             // 
             // registerText
             // 
@@ -168,12 +168,12 @@
             Controls.Add(registerButton);
             Controls.Add(passField2);
             Controls.Add(registerField);
-            Controls.Add(panel1);
+            Controls.Add(registrationText);
             MinimumSize = new Size(412, 504);
             Name = "RegisterForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
-            panel1.ResumeLayout(false);
+            registrationText.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -183,7 +183,7 @@
         #endregion
         private TextBox passField2;
         private TextBox registerField;
-        private Panel panel1;
+        private Panel registrationText;
         private Label registerText;
         private Button registerButton;
         private PictureBox pictureBox2;
