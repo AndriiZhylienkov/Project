@@ -34,6 +34,10 @@
             if (ValidateUser(username, password))
             {
                 MessageBox.Show("Авторизація пройшла успішно!");
+
+                this.Hide();
+                Terminology terminology = new Terminology();
+                terminology.Show();
             }
             else if (string.IsNullOrWhiteSpace(username))
             {
