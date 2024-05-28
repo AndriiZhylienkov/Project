@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\zh24a\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\project1\\clones\\project\\winformsapp1\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\zh24a\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\project1\\clones\\project\\winformsapp1\\terminology.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\terminology.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\zh24a\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\project1\\clones\\project\\winformsapp1\\terminology.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\terminology.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\zh24a\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\project1\\clones\\project\\winformsapp1\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\zh24a\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\project1\\clones\\project\\winformsapp1\\terminology.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\terminology.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\zh24a\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\project1\\clones\\project\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\zh24a\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\project1\\clones\\project\\winformsapp1\\terminology.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\terminology.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A38EC08-DCE8-4751-A80E-18C3B64B55BC}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\zh24a\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\project1\\clones\\project\\winformsapp1\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,6 +63,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\EditForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\EditForm.cs",
+              "ToolTip": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\EditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "WinFormsApp1\\EditForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T09:58:12.179Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditForm.cs",
+              "DocumentMoniker": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\EditForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\EditForm.cs",
+              "ToolTip": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\EditForm.cs",
+              "RelativeToolTip": "WinFormsApp1\\EditForm.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAtwEoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T09:58:23.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Terminology.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Terminology.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Terminology.cs",
@@ -62,32 +99,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Terminology.cs",
               "DocumentMoniker": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Terminology.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Terminology.cs",
               "ToolTip": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Terminology.cs",
               "RelativeToolTip": "WinFormsApp1\\Terminology.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAAcwDgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T07:37:41.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "Terminology.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Terminology.Designer.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Terminology.Designer.cs",
+              "ToolTip": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Terminology.Designer.cs",
+              "RelativeToolTip": "WinFormsApp1\\Terminology.Designer.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAkwFcAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T09:43:33.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Form2.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form2.cs",
               "ToolTip": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "WinFormsApp1\\Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T16:21:12.557Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2024-05-23T16:21:12.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Form2.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form2.cs",
@@ -95,12 +144,11 @@
               "RelativeToolTip": "WinFormsApp1\\Form2.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAiwDAAAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T13:11:20.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T13:11:20.194Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Form2.Designer.cs",
               "DocumentMoniker": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Form2.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form2.Designer.cs",
@@ -108,24 +156,22 @@
               "RelativeToolTip": "WinFormsApp1\\Form2.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T16:21:29.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T16:21:29.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
               "ToolTip": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "WinFormsApp1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T16:20:59.804Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2024-05-23T16:20:59.804Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
@@ -133,12 +179,11 @@
               "RelativeToolTip": "WinFormsApp1\\Form1.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAwwCcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T13:11:06.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T13:11:06.295Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\zh24a\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\project1\\clones\\Project\\WinFormsApp1\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.Designer.cs",
@@ -146,8 +191,7 @@
               "RelativeToolTip": "WinFormsApp1\\Form1.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T16:21:24.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T16:21:24.121Z"
             }
           ]
         }
