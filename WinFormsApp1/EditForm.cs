@@ -74,5 +74,27 @@ namespace WinFormsApp1
                 linksTextBox.Text = selectedTerm.Links;
             }
         }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            if (termsDataGridView.SelectedRows.Count > 0)
+            {
+                var selectedRow = termsDataGridView.SelectedRows[0].Index;
+                termsList.RemoveAt(selectedRow);
+                RefreshDataGridView();
+
+                termTextBox.Clear();
+                definitionTextBox.Clear();
+                linksTextBox.Clear();
+
+                MessageBox.Show("Термін видалено!");
+            }
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            DataManager.SaveData(termsList);
+        }
     }
 }

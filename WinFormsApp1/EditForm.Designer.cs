@@ -36,6 +36,7 @@
             addButton = new Button();
             updateButton = new Button();
             termsDataGridView = new DataGridView();
+            deleteButton = new Button();
             edittingText.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)termsDataGridView).BeginInit();
             SuspendLayout();
@@ -64,28 +65,28 @@
             // 
             // termTextBox
             // 
-            termTextBox.Location = new Point(61, 115);
+            termTextBox.Location = new Point(12, 69);
             termTextBox.Name = "termTextBox";
-            termTextBox.Size = new Size(100, 23);
+            termTextBox.Size = new Size(566, 23);
             termTextBox.TabIndex = 9;
             // 
             // definitionTextBox
             // 
-            definitionTextBox.Location = new Point(335, 115);
+            definitionTextBox.Location = new Point(12, 98);
             definitionTextBox.Name = "definitionTextBox";
-            definitionTextBox.Size = new Size(100, 23);
+            definitionTextBox.Size = new Size(566, 23);
             definitionTextBox.TabIndex = 10;
             // 
             // linksTextBox
             // 
-            linksTextBox.Location = new Point(614, 115);
+            linksTextBox.Location = new Point(12, 127);
             linksTextBox.Name = "linksTextBox";
-            linksTextBox.Size = new Size(100, 23);
+            linksTextBox.Size = new Size(566, 23);
             linksTextBox.TabIndex = 11;
             // 
             // addButton
             // 
-            addButton.Location = new Point(166, 254);
+            addButton.Location = new Point(658, 69);
             addButton.Name = "addButton";
             addButton.Size = new Size(75, 23);
             addButton.TabIndex = 12;
@@ -95,7 +96,7 @@
             // 
             // updateButton
             // 
-            updateButton.Location = new Point(360, 254);
+            updateButton.Location = new Point(658, 98);
             updateButton.Name = "updateButton";
             updateButton.Size = new Size(75, 23);
             updateButton.TabIndex = 13;
@@ -106,11 +107,21 @@
             // termsDataGridView
             // 
             termsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            termsDataGridView.Location = new Point(493, 238);
+            termsDataGridView.Location = new Point(12, 156);
             termsDataGridView.Name = "termsDataGridView";
-            termsDataGridView.Size = new Size(240, 150);
+            termsDataGridView.Size = new Size(776, 282);
             termsDataGridView.TabIndex = 14;
             termsDataGridView.CellContentClick += termsDataGridView_CellContentClick;
+            // 
+            // deleteButton
+            // 
+            deleteButton.Location = new Point(658, 127);
+            deleteButton.Name = "deleteButton";
+            deleteButton.Size = new Size(75, 23);
+            deleteButton.TabIndex = 15;
+            deleteButton.Text = "Delete";
+            deleteButton.UseVisualStyleBackColor = true;
+            deleteButton.Click += deleteButton_Click;
             // 
             // EditForm
             // 
@@ -118,6 +129,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(deleteButton);
             Controls.Add(termsDataGridView);
             Controls.Add(updateButton);
             Controls.Add(addButton);
@@ -143,5 +155,6 @@
         private Button addButton;
         private Button updateButton;
         private DataGridView termsDataGridView;
+        private Button deleteButton;
     }
 }

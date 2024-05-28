@@ -63,14 +63,14 @@
             // 
             // searchTextBox
             // 
-            searchTextBox.Location = new Point(170, 218);
+            searchTextBox.Location = new Point(12, 87);
             searchTextBox.Name = "searchTextBox";
-            searchTextBox.Size = new Size(100, 23);
+            searchTextBox.Size = new Size(507, 23);
             searchTextBox.TabIndex = 8;
             // 
             // searchButton
             // 
-            searchButton.Location = new Point(444, 202);
+            searchButton.Location = new Point(567, 87);
             searchButton.Name = "searchButton";
             searchButton.Size = new Size(75, 23);
             searchButton.TabIndex = 9;
@@ -80,7 +80,7 @@
             // 
             // editButton
             // 
-            editButton.Location = new Point(386, 322);
+            editButton.Location = new Point(731, 87);
             editButton.Name = "editButton";
             editButton.Size = new Size(75, 23);
             editButton.TabIndex = 10;
@@ -90,19 +90,25 @@
             // 
             // resultsDataGridView
             // 
+            resultsDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            resultsDataGridView.BackgroundColor = SystemColors.GradientActiveCaption;
+            resultsDataGridView.BorderStyle = BorderStyle.None;
             resultsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resultsDataGridView.Location = new Point(30, 332);
+            resultsDataGridView.GridColor = SystemColors.ActiveCaption;
+            resultsDataGridView.Location = new Point(12, 163);
             resultsDataGridView.Name = "resultsDataGridView";
-            resultsDataGridView.Size = new Size(240, 150);
+            resultsDataGridView.Size = new Size(901, 362);
             resultsDataGridView.TabIndex = 11;
             // 
             // filterComboBox
             // 
             filterComboBox.FormattingEnabled = true;
-            filterComboBox.Location = new Point(608, 330);
+            filterComboBox.Items.AddRange(new object[] { "За алфавітом", "За датою додавання" });
+            filterComboBox.Location = new Point(12, 116);
             filterComboBox.Name = "filterComboBox";
-            filterComboBox.Size = new Size(121, 23);
+            filterComboBox.Size = new Size(258, 23);
             filterComboBox.TabIndex = 12;
+            filterComboBox.SelectedIndexChanged += filterComboBox_SelectedIndexChanged;
             // 
             // Terminology
             // 
