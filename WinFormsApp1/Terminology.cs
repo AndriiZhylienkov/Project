@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static WinFormsApp1.Terminology;
 
 namespace WinFormsApp1
 {
@@ -32,6 +33,7 @@ namespace WinFormsApp1
         {
             termsList = DataManager.LoadData();
             InitializeComponent();
+
         }
 
         private void searchButton_Click(object sender, EventArgs e)
@@ -90,8 +92,6 @@ namespace WinFormsApp1
                 }
                 return new List<Term>();
             }
-
-
         }
 
         private void filterComboBox_SelectedIndexChanged(object sender, EventArgs e)

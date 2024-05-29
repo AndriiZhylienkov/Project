@@ -63,9 +63,11 @@
             // 
             // searchTextBox
             // 
+            searchTextBox.Font = new Font("Bookman Old Style", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            searchTextBox.ForeColor = Color.LightSlateGray;
             searchTextBox.Location = new Point(12, 87);
             searchTextBox.Name = "searchTextBox";
-            searchTextBox.Size = new Size(507, 23);
+            searchTextBox.Size = new Size(507, 22);
             searchTextBox.TabIndex = 8;
             // 
             // searchButton
@@ -102,11 +104,13 @@
             // 
             // filterComboBox
             // 
+            filterComboBox.Font = new Font("Bookman Old Style", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            filterComboBox.ForeColor = Color.LightSlateGray;
             filterComboBox.FormattingEnabled = true;
             filterComboBox.Items.AddRange(new object[] { "За алфавітом", "За датою додавання" });
             filterComboBox.Location = new Point(12, 116);
             filterComboBox.Name = "filterComboBox";
-            filterComboBox.Size = new Size(258, 23);
+            filterComboBox.Size = new Size(258, 22);
             filterComboBox.TabIndex = 12;
             filterComboBox.SelectedIndexChanged += filterComboBox_SelectedIndexChanged;
             // 

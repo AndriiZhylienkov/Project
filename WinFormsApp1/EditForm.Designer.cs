@@ -65,23 +65,26 @@
             // 
             // termTextBox
             // 
+            termTextBox.Font = new Font("Bookman Old Style", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
             termTextBox.Location = new Point(12, 69);
             termTextBox.Name = "termTextBox";
-            termTextBox.Size = new Size(566, 23);
+            termTextBox.Size = new Size(566, 22);
             termTextBox.TabIndex = 9;
             // 
             // definitionTextBox
             // 
+            definitionTextBox.Font = new Font("Bookman Old Style", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
             definitionTextBox.Location = new Point(12, 98);
             definitionTextBox.Name = "definitionTextBox";
-            definitionTextBox.Size = new Size(566, 23);
+            definitionTextBox.Size = new Size(566, 22);
             definitionTextBox.TabIndex = 10;
             // 
             // linksTextBox
             // 
+            linksTextBox.Font = new Font("Bookman Old Style", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
             linksTextBox.Location = new Point(12, 127);
             linksTextBox.Name = "linksTextBox";
-            linksTextBox.Size = new Size(566, 23);
+            linksTextBox.Size = new Size(566, 22);
             linksTextBox.TabIndex = 11;
             // 
             // addButton
@@ -106,6 +109,9 @@
             // 
             // termsDataGridView
             // 
+            termsDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            termsDataGridView.BackgroundColor = SystemColors.GradientActiveCaption;
+            termsDataGridView.BorderStyle = BorderStyle.None;
             termsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             termsDataGridView.Location = new Point(12, 156);
             termsDataGridView.Name = "termsDataGridView";
