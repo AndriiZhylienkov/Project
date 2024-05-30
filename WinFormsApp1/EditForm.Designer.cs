@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             edittingText = new Panel();
             editText = new Label();
             termTextBox = new TextBox();
             definitionTextBox = new TextBox();
             linksTextBox = new TextBox();
             addButton = new Button();
-            updateButton = new Button();
             termsDataGridView = new DataGridView();
             deleteButton = new Button();
             edittingText.SuspendLayout();
@@ -65,68 +66,92 @@
             // 
             // termTextBox
             // 
-            termTextBox.Font = new Font("Bookman Old Style", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            termTextBox.BorderStyle = BorderStyle.FixedSingle;
+            termTextBox.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            termTextBox.ForeColor = Color.LightSlateGray;
             termTextBox.Location = new Point(12, 69);
             termTextBox.Name = "termTextBox";
-            termTextBox.Size = new Size(566, 22);
+            termTextBox.Size = new Size(566, 26);
             termTextBox.TabIndex = 9;
             // 
             // definitionTextBox
             // 
-            definitionTextBox.Font = new Font("Bookman Old Style", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            definitionTextBox.Location = new Point(12, 98);
+            definitionTextBox.BorderStyle = BorderStyle.FixedSingle;
+            definitionTextBox.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            definitionTextBox.ForeColor = Color.LightSlateGray;
+            definitionTextBox.Location = new Point(12, 101);
             definitionTextBox.Name = "definitionTextBox";
-            definitionTextBox.Size = new Size(566, 22);
+            definitionTextBox.Size = new Size(566, 26);
             definitionTextBox.TabIndex = 10;
             // 
             // linksTextBox
             // 
-            linksTextBox.Font = new Font("Bookman Old Style", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            linksTextBox.Location = new Point(12, 127);
+            linksTextBox.BorderStyle = BorderStyle.FixedSingle;
+            linksTextBox.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            linksTextBox.ForeColor = Color.LightSlateGray;
+            linksTextBox.Location = new Point(12, 133);
             linksTextBox.Name = "linksTextBox";
-            linksTextBox.Size = new Size(566, 22);
+            linksTextBox.Size = new Size(566, 26);
             linksTextBox.TabIndex = 11;
             // 
             // addButton
             // 
-            addButton.Location = new Point(658, 69);
+            addButton.BackColor = SystemColors.ActiveCaption;
+            addButton.Cursor = Cursors.Hand;
+            addButton.FlatAppearance.BorderSize = 0;
+            addButton.FlatStyle = FlatStyle.Flat;
+            addButton.Font = new Font("Bookman Old Style", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            addButton.ForeColor = Color.White;
+            addButton.Location = new Point(593, 69);
             addButton.Name = "addButton";
-            addButton.Size = new Size(75, 23);
+            addButton.Size = new Size(124, 41);
             addButton.TabIndex = 12;
-            addButton.Text = "Add";
-            addButton.UseVisualStyleBackColor = true;
+            addButton.Text = "Додати";
+            addButton.UseVisualStyleBackColor = false;
             addButton.Click += addButton_Click;
-            // 
-            // updateButton
-            // 
-            updateButton.Location = new Point(658, 98);
-            updateButton.Name = "updateButton";
-            updateButton.Size = new Size(75, 23);
-            updateButton.TabIndex = 13;
-            updateButton.Text = "Update";
-            updateButton.UseVisualStyleBackColor = true;
-            updateButton.Click += updateButton_Click;
             // 
             // termsDataGridView
             // 
             termsDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             termsDataGridView.BackgroundColor = SystemColors.GradientActiveCaption;
             termsDataGridView.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle1.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle1.ForeColor = Color.LightSlateGray;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            termsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             termsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            termsDataGridView.Location = new Point(12, 156);
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle2.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            dataGridViewCellStyle2.ForeColor = Color.LightSlateGray;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            termsDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            termsDataGridView.Location = new Point(12, 179);
             termsDataGridView.Name = "termsDataGridView";
-            termsDataGridView.Size = new Size(776, 282);
+            termsDataGridView.Size = new Size(776, 259);
             termsDataGridView.TabIndex = 14;
             termsDataGridView.CellContentClick += termsDataGridView_CellContentClick;
             // 
             // deleteButton
             // 
-            deleteButton.Location = new Point(658, 127);
+            deleteButton.BackColor = SystemColors.ActiveCaption;
+            deleteButton.Cursor = Cursors.Hand;
+            deleteButton.FlatAppearance.BorderSize = 0;
+            deleteButton.FlatStyle = FlatStyle.Flat;
+            deleteButton.Font = new Font("Bookman Old Style", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            deleteButton.ForeColor = Color.White;
+            deleteButton.Location = new Point(593, 116);
             deleteButton.Name = "deleteButton";
-            deleteButton.Size = new Size(75, 23);
+            deleteButton.Size = new Size(124, 41);
             deleteButton.TabIndex = 15;
-            deleteButton.Text = "Delete";
-            deleteButton.UseVisualStyleBackColor = true;
+            deleteButton.Text = "Видалити";
+            deleteButton.UseVisualStyleBackColor = false;
             deleteButton.Click += deleteButton_Click;
             // 
             // EditForm
@@ -137,13 +162,13 @@
             ClientSize = new Size(800, 450);
             Controls.Add(deleteButton);
             Controls.Add(termsDataGridView);
-            Controls.Add(updateButton);
             Controls.Add(addButton);
             Controls.Add(linksTextBox);
             Controls.Add(definitionTextBox);
             Controls.Add(termTextBox);
             Controls.Add(edittingText);
             Name = "EditForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "EditForm";
             edittingText.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)termsDataGridView).EndInit();
@@ -159,7 +184,6 @@
         private TextBox definitionTextBox;
         private TextBox linksTextBox;
         private Button addButton;
-        private Button updateButton;
         private DataGridView termsDataGridView;
         private Button deleteButton;
     }

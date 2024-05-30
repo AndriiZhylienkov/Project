@@ -16,6 +16,7 @@ namespace WinFormsApp1
     {
         private List<Term> termsList = new List<Term>();
 
+
         public class Term
         {
             public string Name { get; set; }
@@ -33,18 +34,46 @@ namespace WinFormsApp1
         {
             termsList = DataManager.LoadData();
             InitializeComponent();
+            LoadResultsDataGrid();
 
+        }
+
+        private void LoadResultsDataGrid()
+        {
+            resultsDataGridView.DataSource = new BindingSource { DataSource = termsList };
+
+            SetResultsDataGridViewHeaders();
+        }
+
+        private void SetResultsDataGridViewHeaders()
+        {
+            if (resultsDataGridView.Columns.Contains("Name"))
+            {
+                resultsDataGridView.Columns["Name"].HeaderText = "Термін";
+            }
+            if (resultsDataGridView.Columns.Contains("Definition"))
+            {
+                resultsDataGridView.Columns["Definition"].HeaderText = "Визначення";
+            }
+            if (resultsDataGridView.Columns.Contains("Links"))
+            {
+                resultsDataGridView.Columns["Links"].HeaderText = "Посилання";
+            }
+            if (resultsDataGridView.Columns.Contains("DateAdded"))
+            {
+                resultsDataGridView.Columns["DateAdded"].HeaderText = "Дата додавання";
+            }
         }
 
         private void searchButton_Click(object sender, EventArgs e)
         {
             string searchTerm = searchTextBox.Text.ToLower();
 
-            var filteredTerms = termsList
-                .Where(t => t.Name.ToLower().Contains(searchTerm) || t.Definition.ToLower().Contains(searchTerm))
-                .ToList();
+            var filteredTerms = termsList.FindAll(t => t.Name.ToLower().Contains(searchTerm) || t.Definition.ToLower().Contains(searchTerm) || t.Links.ToLower().Contains(searchTerm));
 
             resultsDataGridView.DataSource = new BindingSource { DataSource = filteredTerms };
+
+            SetResultsDataGridViewHeaders();
 
             if (filteredTerms.Count == 0)
             {
@@ -56,6 +85,7 @@ namespace WinFormsApp1
         {
             var editForm = new EditForm(termsList);
             editForm.ShowDialog();
+            LoadResultsDataGrid();
 
             RefreshDataGridView();
         }

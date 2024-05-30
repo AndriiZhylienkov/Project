@@ -25,6 +25,11 @@ namespace WinFormsApp1
         private void LoadDataGrid()
         {
             termsDataGridView.DataSource = new BindingSource { DataSource = termsList };
+
+            termsDataGridView.Columns["Name"].HeaderText = "Термін";
+            termsDataGridView.Columns["Definition"].HeaderText = "Визначення";
+            termsDataGridView.Columns["Links"].HeaderText = "Посилання";
+            termsDataGridView.Columns["DateAdded"].HeaderText = "Дата додавання";
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -58,27 +63,6 @@ namespace WinFormsApp1
         {
             termsDataGridView.DataSource = null;
             termsDataGridView.DataSource = termsList;
-        }
-
-        private void updateButton_Click(object sender, EventArgs e)
-        {
-            if (termsDataGridView.SelectedRows.Count > 0)
-            {
-                int selectedRow = termsDataGridView.SelectedRows[0].Index;
-                if (selectedRow >= 0 && selectedRow < termsList.Count)
-                {
-                    termsList[selectedRow].Name = termTextBox.Text;
-                    termsList[selectedRow].Definition = definitionTextBox.Text;
-                    termsList[selectedRow].Links = linksTextBox.Text;
-                    RefreshDataGridView();
-
-                    termTextBox.Clear();
-                    definitionTextBox.Clear();
-                    linksTextBox.Clear();
-
-                    MessageBox.Show("Термін оновлено!");
-                }
-            }
         }
 
         private void termsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
