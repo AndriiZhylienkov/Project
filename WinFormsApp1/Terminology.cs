@@ -45,6 +45,28 @@ namespace WinFormsApp1
             SetResultsDataGridViewHeaders();
         }
 
+        private void ResultsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == resultsDataGridView.Columns["Links"].Index && e.RowIndex >= 0)
+            {
+                var term = resultsDataGridView.Rows[e.RowIndex].Cells["Name"].Value.ToString();
+                var url = $"https://uk.wikipedia.org/wiki/{term}";
+
+                try
+                {
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                    {
+                        FileName = url,
+                        UseShellExecute = true
+                    });
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Не вдалося відкрити посилання: " + ex.Message);
+                }
+            }
+        }
+
         private void SetResultsDataGridViewHeaders()
         {
             if (resultsDataGridView.Columns.Contains("Name"))
@@ -149,6 +171,16 @@ namespace WinFormsApp1
         private void SortByDateAdded()
         {
             termsList = termsList.OrderBy(t => t.DateAdded).ToList();
+        }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Інструкції користування:\n\n" +
+                        "1. Введіть термін у поле пошуку та натисніть кнопку 'Пошук', щоб знайти терміни.\n" +
+                        "2. Виберіть фільтр з випадаючого списку, щоб сортувати терміни.\n" +
+                        "3. Натисніть кнопку 'Редагувати', щоб відкрити форму редагування бази даних.\n" +
+                        "4. Натисніть на посилання у стовпці 'Посилання', щоб відкрити сторінку Wikipedia для терміну.",
+                        "Допомога", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

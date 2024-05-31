@@ -169,6 +169,7 @@
             Controls.Add(passField2);
             Controls.Add(registerField);
             Controls.Add(registrationText);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MinimumSize = new Size(412, 504);
             Name = "RegisterForm";
             StartPosition = FormStartPosition.CenterScreen;

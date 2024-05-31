@@ -169,6 +169,7 @@
             Controls.Add(passField1);
             Controls.Add(logInField);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MinimumSize = new Size(405, 528);
             Name = "LogInForm";
             StartPosition = FormStartPosition.CenterScreen;

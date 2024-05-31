@@ -80,18 +80,21 @@ namespace WinFormsApp1
         {
             if (termsDataGridView.SelectedRows.Count > 0)
             {
-                int selectedRow = termsDataGridView.SelectedRows[0].Index;
-                if (selectedRow >= 0 && selectedRow < termsList.Count)
+                var selectedTerm = termsDataGridView.SelectedRows[0].DataBoundItem as Term;
+                if (selectedTerm != null)
                 {
-                    termsList.RemoveAt(selectedRow);
-                    RefreshDataGridView();
-
-                    termTextBox.Clear();
-                    definitionTextBox.Clear();
-                    linksTextBox.Clear();
-
-                    MessageBox.Show("Термін видалено!");
+                    var result = MessageBox.Show($"Ви дійсно хочете видалити термін '{selectedTerm.Name}'?", "Підтвердження видалення", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        termsList.Remove(selectedTerm);
+                        LoadDataGrid();
+                        MessageBox.Show("Термін видалено!");
+                    }
                 }
+            }
+            else
+            {
+                MessageBox.Show("Будь ласка, виберіть термін для видалення.");
             }
         }
 
@@ -99,6 +102,18 @@ namespace WinFormsApp1
         {
             base.OnFormClosing(e);
             DataManager.SaveData(termsList);
+        }
+
+        private void helpButton2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Інструкції користування:\n\n" +
+                        "1. Введіть термін у відповідне поле та його визначення у відповідне поле.\n" +
+                        "2. Введіть вигляд посилання у поле 'Посилання'.\n" +
+                        "3. Натисніть кнопку 'Додати', щоб додати новий термін до бази даних.\n" +
+                        "4. Виберіть термін зі списку, щоб видалити його.\n" +
+                        "5. Для редагування терміну треба двічі клацнути по ньому лівою кнопкою миші.\n" +
+                        "6. Натисніть кнопку 'Видалити', щоб видалити вибраний термін.",
+                        "Допомога", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

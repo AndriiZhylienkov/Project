@@ -30,6 +30,7 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditForm));
             edittingText = new Panel();
             editText = new Label();
             termTextBox = new TextBox();
@@ -38,6 +39,7 @@
             addButton = new Button();
             termsDataGridView = new DataGridView();
             deleteButton = new Button();
+            helpButton2 = new Button();
             edittingText.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)termsDataGridView).BeginInit();
             SuspendLayout();
@@ -112,6 +114,7 @@
             // 
             // termsDataGridView
             // 
+            termsDataGridView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             termsDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             termsDataGridView.BackgroundColor = SystemColors.GradientActiveCaption;
             termsDataGridView.BorderStyle = BorderStyle.None;
@@ -134,7 +137,7 @@
             termsDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             termsDataGridView.Location = new Point(12, 179);
             termsDataGridView.Name = "termsDataGridView";
-            termsDataGridView.Size = new Size(776, 259);
+            termsDataGridView.Size = new Size(776, 268);
             termsDataGridView.TabIndex = 14;
             termsDataGridView.CellContentClick += termsDataGridView_CellContentClick;
             // 
@@ -154,12 +157,30 @@
             deleteButton.UseVisualStyleBackColor = false;
             deleteButton.Click += deleteButton_Click;
             // 
+            // helpButton2
+            // 
+            helpButton2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            helpButton2.BackColor = SystemColors.ActiveCaption;
+            helpButton2.Cursor = Cursors.Hand;
+            helpButton2.FlatAppearance.BorderSize = 0;
+            helpButton2.FlatStyle = FlatStyle.Flat;
+            helpButton2.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            helpButton2.ForeColor = Color.White;
+            helpButton2.Location = new Point(747, 100);
+            helpButton2.Name = "helpButton2";
+            helpButton2.Size = new Size(25, 25);
+            helpButton2.TabIndex = 16;
+            helpButton2.Text = "?";
+            helpButton2.UseVisualStyleBackColor = false;
+            helpButton2.Click += helpButton2_Click;
+            // 
             // EditForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 459);
+            Controls.Add(helpButton2);
             Controls.Add(deleteButton);
             Controls.Add(termsDataGridView);
             Controls.Add(addButton);
@@ -167,6 +188,8 @@
             Controls.Add(definitionTextBox);
             Controls.Add(termTextBox);
             Controls.Add(edittingText);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MinimumSize = new Size(791, 198);
             Name = "EditForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "EditForm";
@@ -186,5 +209,6 @@
         private Button addButton;
         private DataGridView termsDataGridView;
         private Button deleteButton;
+        private Button helpButton2;
     }
 }
