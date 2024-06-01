@@ -151,10 +151,13 @@ namespace WinFormsApp1
             switch (filterComboBox.SelectedIndex)
             {
                 case 0:
-                    SortByAlphabet();
+                    termsList = termsList.OrderBy(t => t.Name).ToList();
                     break;
                 case 1:
-                    SortByDateAdded();
+                    termsList = termsList.OrderBy(t => t.DateAdded).ToList();
+                    break;
+                case 2:
+                    termsList = termsList.OrderBy(term => term.Name.Length).ToList();
                     break;
                 default:
                     break;
@@ -163,22 +166,12 @@ namespace WinFormsApp1
             RefreshDataGridView();
         }
 
-        private void SortByAlphabet()
-        {
-            termsList = termsList.OrderBy(t => t.Name).ToList();
-        }
-
-        private void SortByDateAdded()
-        {
-            termsList = termsList.OrderBy(t => t.DateAdded).ToList();
-        }
-
         private void helpButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Інструкції користування:\n\n" +
-                        "1. Введіть термін у поле пошуку та натисніть кнопку 'Пошук', щоб знайти терміни.\n" +
-                        "2. Виберіть фільтр з випадаючого списку, щоб сортувати терміни.\n" +
-                        "3. Натисніть кнопку 'Редагувати', щоб відкрити форму редагування бази даних.\n" +
+                        "1. Введіть термін у поле пошуку та натисніть кнопку 'Пошук', щоб знайти терміни.\n\n" +
+                        "2. Виберіть фільтр з випадаючого списку, щоб сортувати терміни.\n\n" +
+                        "3. Натисніть кнопку 'Редагувати', щоб відкрити форму редагування бази даних.\n\n" +
                         "4. Натисніть на посилання у стовпці 'Посилання', щоб відкрити сторінку Wikipedia для терміну.",
                         "Допомога", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

@@ -140,6 +140,8 @@
             termsDataGridView.Size = new Size(776, 268);
             termsDataGridView.TabIndex = 14;
             termsDataGridView.CellContentClick += termsDataGridView_CellContentClick;
+            termsDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            termsDataGridView.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             // 
             // deleteButton
             // 

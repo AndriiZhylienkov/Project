@@ -166,6 +166,8 @@ namespace WinFormsApp1
             resultsDataGridView.Size = new Size(1329, 455);
             resultsDataGridView.TabIndex = 11;
             resultsDataGridView.CellContentClick += ResultsDataGridView_CellContentClick;
+            resultsDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            resultsDataGridView.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             // 
             // linkColumn
             // 
@@ -180,7 +182,7 @@ namespace WinFormsApp1
             filterComboBox.Font = new Font("Bookman Old Style", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             filterComboBox.ForeColor = Color.LightSlateGray;
             filterComboBox.FormattingEnabled = true;
-            filterComboBox.Items.AddRange(new object[] { "За алфавітом", "За датою додавання" });
+            filterComboBox.Items.AddRange(new object[] { "За алфавітом", "За датою додавання", "За розміром" });
             filterComboBox.Location = new Point(12, 124);
             filterComboBox.Margin = new Padding(4, 3, 4, 3);
             filterComboBox.Name = "filterComboBox";
